@@ -1,0 +1,31 @@
+<svg viewBox='0 0 880 540' xmlns='http://www.w3.org/2000/svg' style='width:100%;font-family:Inter,system-ui,sans-serif;background:#ffffff;'>
+<text x='440' y='22' text-anchor='middle' fill='#1e293b' font-size='13' font-weight='700'>Code city — area = RLOC, colour = impact level</text>
+<rect x='2' y='36.0' width='876' height='431.9' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1'/>
+<text x='14' y='52.0' fill='#475569' font-size='11' font-weight='700' text-transform='uppercase'>commonMain (7 files)</text>
+<rect x='8.0' y='60.0' width='320.1' height='399.9' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='168.0' y='263.0' text-anchor='middle' fill='white' font-size='10' font-weight='600'>DetailScreen.kt</text>
+<rect x='328.1' y='60.0' width='221.4' height='399.9' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='438.8' y='263.0' text-anchor='middle' fill='white' font-size='10' font-weight='600'>ListScreen.kt</text>
+<rect x='549.5' y='60.0' width='163.1' height='265.6' fill='#dc2626' stroke='white' stroke-width='1.5'/>
+<text x='631.0' y='195.8' text-anchor='middle' fill='white' font-size='10' font-weight='600'>Koin.kt</text>
+<rect x='712.6' y='60.0' width='159.4' height='265.6' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='792.3' y='195.8' text-anchor='middle' fill='white' font-size='10' font-weight='600'>App.kt</text>
+<rect x='549.5' y='325.6' width='164.8' height='134.3' fill='#dc2626' stroke='white' stroke-width='1.5'/>
+<text x='631.9' y='395.8' text-anchor='middle' fill='white' font-size='10' font-weight='600'>MuseumApi.kt</text>
+<rect x='714.3' y='325.6' width='93.2' height='134.3' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='760.9' y='395.8' text-anchor='middle' fill='white' font-size='10' font-weight='600'>ListViewModel.kt</text>
+<rect x='807.5' y='325.6' width='64.5' height='134.3' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<text x='839.8' y='395.8' text-anchor='middle' fill='white' font-size='10' font-weight='600'>DetailViewModel.kt</text>
+<rect x='2' y='467.9' width='876' height='36.1' fill='#f8fafc' stroke='#e2e8f0' stroke-width='1'/>
+<text x='14' y='483.9' fill='#475569' font-size='11' font-weight='700' text-transform='uppercase'>other (4 files)</text>
+<rect x='8.0' y='491.9' width='259.2' height='4.1' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<rect x='267.2' y='491.9' width='230.4' height='4.1' fill='#dc2626' stroke='white' stroke-width='1.5'/>
+<rect x='497.6' y='491.9' width='201.6' height='4.1' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<rect x='699.2' y='491.9' width='172.8' height='4.1' fill='#f59e0b' stroke='white' stroke-width='1.5'/>
+<rect x='24' y='514' width='14' height='14' fill='#dc2626' rx='2'/>
+<text x='46' y='526' fill='#475569' font-size='12' font-weight='600'>Direct</text>
+<rect x='224' y='514' width='14' height='14' fill='#f59e0b' rx='2'/>
+<text x='246' y='526' fill='#475569' font-size='12' font-weight='600'>Transitive</text>
+<rect x='424' y='514' width='14' height='14' fill='#7c3aed' rx='2'/>
+<text x='446' y='526' fill='#475569' font-size='12' font-weight='600'>Expect/Actual</text>
+</svg>

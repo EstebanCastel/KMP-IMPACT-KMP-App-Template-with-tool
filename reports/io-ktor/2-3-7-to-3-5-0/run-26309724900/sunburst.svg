@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 880" width="760" height="880" font-family="system-ui,sans-serif">
+<rect width="100%" height="100%" fill="#F5F4F0"/>
+<text x="380.0" y="30" text-anchor="middle" fill="#1E293B" font-size="18" font-weight="700">KMP Impact . io.ktor</text>
+<text x="380.0" y="52" text-anchor="middle" fill="#64748b" font-size="12">2.3.7 -&gt; 3.5.0 . 19 archivos</text>
+<path d="M 380.00 350.00 A 100.00 100.00 0 1 1 336.03 360.19 L 349.22 387.13 A 70.00 70.00 0 1 0 380.00 380.00 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 380.00 318.00 A 132.00 132.00 0 1 1 279.53 535.61 L 302.36 516.16 A 102.00 102.00 0 1 0 380.00 348.00 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 380.00 286.00 A 164.00 164.00 0 1 1 255.17 556.37 L 278.01 536.91 A 134.00 134.00 0 1 0 380.00 316.00 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 380.00 254.00 A 196.00 196.00 0 1 1 230.82 577.12 L 253.65 557.66 A 166.00 166.00 0 1 0 380.00 284.00 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 380.00 222.00 A 228.00 228.00 0 0 1 600.89 506.50 L 571.82 499.07 A 198.00 198.00 0 0 0 380.00 252.00 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 600.89 506.50 A 228.00 228.00 0 0 1 470.84 659.12 L 458.88 631.61 A 198.00 198.00 0 0 0 571.82 499.07 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 470.84 659.12 A 228.00 228.00 0 0 1 270.52 650.00 L 284.93 623.68 A 198.00 198.00 0 0 0 458.88 631.61 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 270.52 650.00 A 228.00 228.00 0 0 1 206.46 597.88 L 229.29 578.42 A 198.00 198.00 0 0 0 284.93 623.68 Z" fill="#60A5FA" fill-opacity="1"/>
+<path d="M 279.53 535.61 A 132.00 132.00 0 0 1 250.76 423.14 L 280.13 429.25 A 102.00 102.00 0 0 0 302.36 516.16 Z" fill="#B91C1C" fill-opacity="1"/>
+<path d="M 250.76 423.14 A 132.00 132.00 0 0 1 275.74 369.05 L 299.43 387.45 A 102.00 102.00 0 0 0 280.13 429.25 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 275.74 369.05 A 132.00 132.00 0 0 1 321.96 331.45 L 335.15 358.39 A 102.00 102.00 0 0 0 299.43 387.45 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 336.03 360.19 A 100.00 100.00 0 0 1 380.00 350.00 L 380.00 380.00 A 70.00 70.00 0 0 0 349.22 387.13 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 321.96 331.45 A 132.00 132.00 0 0 1 380.00 318.00 L 380.00 348.00 A 102.00 102.00 0 0 0 335.15 358.39 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 307.88 302.71 A 164.00 164.00 0 0 1 380.00 286.00 L 380.00 316.00 A 134.00 134.00 0 0 0 321.08 329.65 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 293.81 273.97 A 196.00 196.00 0 0 1 380.00 254.00 L 380.00 284.00 A 166.00 166.00 0 0 0 307.00 300.91 Z" fill="#1D4ED8" fill-opacity="1"/>
+<path d="M 279.74 245.23 A 228.00 228.00 0 0 1 380.00 222.00 L 380.00 252.00 A 198.00 198.00 0 0 0 292.93 272.17 Z" fill="#1D4ED8" fill-opacity="1"/>
+<text x="399.2" y="532.8" text-anchor="middle" dominant-baseline="middle" transform="rotate(77.0 399.2 532.8)" font-size="11" font-weight="700" fill="#FFFFFF">commonMain</text>
+<text x="486.2" y="499.0" text-anchor="middle" dominant-baseline="middle" transform="rotate(24.8 486.2 499.0)" font-size="11" font-weight="700" fill="#FFFFFF">com</text>
+<text x="515.3" y="512.5" text-anchor="middle" dominant-baseline="middle" transform="rotate(24.8 515.3 512.5)" font-size="11" font-weight="700" fill="#FFFFFF">jetbrains</text>
+<text x="544.3" y="525.9" text-anchor="middle" dominant-baseline="middle" transform="rotate(24.8 544.3 525.9)" font-size="11" font-weight="700" fill="#FFFFFF">kmpapp</text>
+<text x="548.2" y="319.4" text-anchor="middle" dominant-baseline="middle" transform="rotate(-37.8 548.2 319.4)" font-size="11" font-weight="700" fill="#FFFFFF">screens</text>
+<text x="435.1" y="212.3" text-anchor="start" dominant-baseline="middle" transform="rotate(-77.0 435.1 212.3)" font-size="10" font-weight="600" fill="#1D4ED8" opacity="0.85">DetailScreen</text>
+<text x="534.0" y="260.7" text-anchor="start" dominant-baseline="middle" transform="rotate(-50.9 534.0 260.7)" font-size="10" font-weight="600" fill="#1D4ED8" opacity="0.85">DetailViewModel</text>
+<text x="601.5" y="347.7" text-anchor="start" dominant-baseline="middle" transform="rotate(-24.8 601.5 347.7)" font-size="10" font-weight="600" fill="#1D4ED8" opacity="0.85">ListScreen</text>
+<text x="623.9" y="455.6" text-anchor="start" dominant-baseline="middle" transform="rotate(1.3 623.9 455.6)" font-size="10" font-weight="600" fill="#1D4ED8" opacity="0.85">ListViewModel</text>
+<text x="542.1" y="588.1" text-anchor="middle" dominant-baseline="middle" transform="rotate(40.4 542.1 588.1)" font-size="11" font-weight="700" fill="#FFFFFF">data</text>
+<text x="565.7" y="608.3" text-anchor="start" dominant-baseline="middle" transform="rotate(40.4 565.7 608.3)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">MuseumApi</text>
+<text x="370.3" y="662.8" text-anchor="middle" dominant-baseline="middle" transform="rotate(272.6 370.3 662.8)" font-size="11" font-weight="700" fill="#FFFFFF">di</text>
+<text x="368.9" y="693.7" text-anchor="end" dominant-baseline="middle" transform="rotate(272.6 368.9 693.7)" font-size="10" font-weight="600" fill="#B91C1C" opacity="0.85">Koin</text>
+<text x="245.6" y="615.2" text-anchor="middle" dominant-baseline="middle" transform="rotate(309.1 245.6 615.2)" font-size="11" font-weight="700" fill="#1E293B">App</text>
+<text x="266.6" y="479.0" text-anchor="middle" dominant-baseline="middle" transform="rotate(345.7 266.6 479.0)" font-size="11" font-weight="700" fill="#FFFFFF">CommonM.</text>
+<text x="273.8" y="401.0" text-anchor="middle" dominant-baseline="middle" transform="rotate(384.8 273.8 401.0)" font-size="11" font-weight="700" fill="#FFFFFF">App.</text>
+<text x="306.2" y="359.2" text-anchor="middle" dominant-baseline="middle" transform="rotate(410.9 306.2 359.2)" font-size="11" font-weight="700" fill="#FFFFFF">Vie.</text>
+<text x="360.8" y="367.2" text-anchor="middle" dominant-baseline="middle" transform="rotate(437.0 360.8 367.2)" font-size="11" font-weight="700" fill="#FFFFFF">main</text>
+<text x="353.6" y="336.0" text-anchor="middle" dominant-baseline="middle" transform="rotate(437.0 353.6 336.0)" font-size="11" font-weight="700" fill="#FFFFFF">com</text>
+<text x="346.4" y="304.8" text-anchor="middle" dominant-baseline="middle" transform="rotate(437.0 346.4 304.8)" font-size="11" font-weight="700" fill="#FFFFFF">jetb.</text>
+<text x="339.2" y="273.7" text-anchor="middle" dominant-baseline="middle" transform="rotate(437.0 339.2 273.7)" font-size="11" font-weight="700" fill="#FFFFFF">kmpapp</text>
+<text x="331.9" y="242.5" text-anchor="middle" dominant-baseline="middle" transform="rotate(437.0 331.9 242.5)" font-size="11" font-weight="700" fill="#FFFFFF">MuseumA.</text>
+<circle cx="380.0" cy="450.0" r="70" fill="#F5F4F0" stroke="#D8D6D0"/><text x="380.0" y="454.0" text-anchor="middle" font-size="13" font-weight="700" fill="#64748B">src</text>
+<rect x="20" y="850" width="14" height="14" rx="3" fill="#B91C1C"/><text x="40" y="861" fill="#475569" font-size="11">Directo</text>
+<rect x="164" y="850" width="14" height="14" rx="3" fill="#1D4ED8"/><text x="184" y="861" fill="#475569" font-size="11">Transitivo d1</text>
+<rect x="308" y="850" width="14" height="14" rx="3" fill="#60A5FA"/><text x="328" y="861" fill="#475569" font-size="11">Transitivo d2+</text>
+<rect x="452" y="850" width="14" height="14" rx="3" fill="#94A3B8"/><text x="472" y="861" fill="#475569" font-size="11">Sin impacto</text>
+<rect x="596" y="850" width="14" height="14" rx="3" fill="none" stroke="#64748B" stroke-width="1.5" stroke-dasharray="3,2"/><text x="616" y="861" fill="#475569" font-size="11">Expect/Actual</text>
+</svg>

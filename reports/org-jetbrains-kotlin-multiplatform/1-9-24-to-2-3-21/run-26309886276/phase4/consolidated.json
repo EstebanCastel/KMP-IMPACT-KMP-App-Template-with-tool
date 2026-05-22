@@ -1,0 +1,512 @@
+{
+  "dependency_group": "org.jetbrains.kotlin.multiplatform",
+  "version_before": "1.9.24",
+  "version_after": "2.3.21",
+  "static_impact": {
+    "dependency_group": "org.jetbrains.kotlin.multiplatform",
+    "version_before": "1.9.24",
+    "version_after": "2.3.21",
+    "seed_files": [
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/App.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/data/MuseumObject.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/data/MuseumRepository.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/data/MuseumStorage.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/di/Koin.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/detail/DetailViewModel.kt",
+      "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/list/ListViewModel.kt"
+    ],
+    "impacted_files": [
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/App.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "androidx.compose.foundation.isSystemInDarkTheme",
+          "androidx.compose.material3.MaterialTheme",
+          "androidx.compose.material3.Surface",
+          "androidx.compose.material3.darkColorScheme",
+          "androidx.compose.material3.lightColorScheme",
+          "androidx.compose.runtime.Composable",
+          "androidx.navigation.NavHostController",
+          "androidx.navigation.compose.NavHost",
+          "androidx.navigation.compose.composable",
+          "androidx.navigation.compose.rememberNavController",
+          "androidx.navigation.toRoute",
+          "com.jetbrains.kmpapp.screens.detail.DetailScreen",
+          "com.jetbrains.kmpapp.screens.list.ListScreen",
+          "kotlinx.serialization.Serializable"
+        ],
+        "metrics": {
+          "rloc": 44,
+          "functions": 1,
+          "mcc": 3,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "com.jetbrains.kmpapp.ListDestination",
+          "com.jetbrains.kmpapp.DetailDestination",
+          "com.jetbrains.kmpapp.App"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/data/MuseumObject.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "kotlinx.serialization.Serializable"
+        ],
+        "metrics": {
+          "rloc": 17,
+          "functions": 0,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "com.jetbrains.kmpapp.data.MuseumObject"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/data/MuseumRepository.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "kotlinx.coroutines.CoroutineScope",
+          "kotlinx.coroutines.SupervisorJob",
+          "kotlinx.coroutines.flow.Flow",
+          "kotlinx.coroutines.launch"
+        ],
+        "metrics": {
+          "rloc": 21,
+          "functions": 3,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "com.jetbrains.kmpapp.data.MuseumRepository"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/data/MuseumStorage.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "kotlinx.coroutines.flow.Flow",
+          "kotlinx.coroutines.flow.MutableStateFlow",
+          "kotlinx.coroutines.flow.map"
+        ],
+        "metrics": {
+          "rloc": 21,
+          "functions": 4,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "com.jetbrains.kmpapp.data.MuseumStorage",
+          "com.jetbrains.kmpapp.data.InMemoryMuseumStorage"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/di/Koin.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "com.jetbrains.kmpapp.data.InMemoryMuseumStorage",
+          "com.jetbrains.kmpapp.data.KtorMuseumApi",
+          "com.jetbrains.kmpapp.data.MuseumApi",
+          "com.jetbrains.kmpapp.data.MuseumRepository",
+          "com.jetbrains.kmpapp.data.MuseumStorage",
+          "com.jetbrains.kmpapp.screens.detail.DetailViewModel",
+          "com.jetbrains.kmpapp.screens.list.ListViewModel",
+          "io.ktor.client.HttpClient",
+          "io.ktor.client.plugins.contentnegotiation.ContentNegotiation",
+          "io.ktor.http.ContentType",
+          "io.ktor.serialization.kotlinx.json.json",
+          "kotlinx.serialization.json.Json",
+          "org.koin.core.context.startKoin",
+          "org.koin.core.module.dsl.factoryOf",
+          "org.koin.dsl.module"
+        ],
+        "metrics": {
+          "rloc": 45,
+          "functions": 1,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "com.jetbrains.kmpapp.di.initKoin"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/detail/DetailViewModel.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "androidx.lifecycle.ViewModel",
+          "com.jetbrains.kmpapp.data.MuseumObject",
+          "com.jetbrains.kmpapp.data.MuseumRepository",
+          "kotlinx.coroutines.flow.Flow"
+        ],
+        "metrics": {
+          "rloc": 9,
+          "functions": 1,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "com.jetbrains.kmpapp.screens.detail.DetailViewModel"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/list/ListViewModel.kt",
+        "relation": "direct",
+        "distance": 0,
+        "imports_from_dependency": [
+          "androidx.lifecycle.ViewModel",
+          "androidx.lifecycle.viewModelScope",
+          "com.jetbrains.kmpapp.data.MuseumObject",
+          "com.jetbrains.kmpapp.data.MuseumRepository",
+          "kotlinx.coroutines.flow.SharingStarted",
+          "kotlinx.coroutines.flow.StateFlow",
+          "kotlinx.coroutines.flow.stateIn"
+        ],
+        "metrics": {
+          "rloc": 13,
+          "functions": 0,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "com.jetbrains.kmpapp.screens.list.ListViewModel"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/detail/DetailScreen.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 133,
+          "functions": 1,
+          "mcc": 3,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "com.jetbrains.kmpapp.screens.detail.DetailScreen",
+          "com.jetbrains.kmpapp.screens.detail.ObjectDetails",
+          "com.jetbrains.kmpapp.screens.detail.LabeledInfo"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/list/ListScreen.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 92,
+          "functions": 1,
+          "mcc": 3,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "com.jetbrains.kmpapp.screens.list.ListScreen",
+          "com.jetbrains.kmpapp.screens.list.ObjectGrid",
+          "com.jetbrains.kmpapp.screens.list.ObjectFrame"
+        ],
+        "source_set": "commonMain"
+      },
+      {
+        "file_path": "/tmp/output/phase1/before/androidApp/src/main/kotlin/com/jetbrains/kmpapp/MuseumApp.kt",
+        "relation": "transitive",
+        "distance": 1,
+        "imports_from_dependency": [],
+        "metrics": {
+          "rloc": 9,
+          "functions": 1,
+          "mcc": 1,
+          "detekt_findings": 0,
+          "test_coverage": -1.0,
+          "metrics_source": "heuristic"
+        },
+        "declarations": [
+          "com.jetbrains.kmpapp.MuseumApp"
+        ],
+        "source_set": "main"
+      }
+    ],
+    "expect_actual_pairs": [
+      {
+        "expect_fqcn": "com.example.common.DatabaseDriverFactory",
+        "expect_file": "/tmp/output/phase1/before/tools/kmp-impact-analyzer/tests/fixtures/sample_kotlin/ExpectClass.kt",
+        "actual_files": [
+          "/tmp/output/phase1/before/tools/kmp-impact-analyzer/tests/fixtures/sample_kotlin/ActualAndroid.kt"
+        ]
+      }
+    ],
+    "total_project_files": 19,
+    "total_impacted": 10,
+    "ksp_edges_added": 0
+  },
+  "dynamic_regressions": {
+    "status": "skipped",
+    "blocked_reason": "",
+    "before_screens": [],
+    "after_screens": [],
+    "diffs": [],
+    "activity_coverage_before": {},
+    "activity_coverage_after": {},
+    "nodes_before": 0,
+    "nodes_after": 0,
+    "structures_before": 0,
+    "structures_after": 0
+  },
+  "screen_mappings": [
+    {
+      "screen_name": "App",
+      "mapped_files": [
+        "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/App.kt"
+      ],
+      "confidence": 0.9,
+      "method": "composable_declaration"
+    },
+    {
+      "screen_name": "MuseumApp",
+      "mapped_files": [
+        "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/App.kt",
+        "/tmp/output/phase1/before/androidApp/src/main/kotlin/com/jetbrains/kmpapp/MuseumApp.kt"
+      ],
+      "confidence": 0.7,
+      "method": "activity_manifest"
+    },
+    {
+      "screen_name": "Detail",
+      "mapped_files": [
+        "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/detail/DetailViewModel.kt"
+      ],
+      "confidence": 0.8,
+      "method": "viewmodel_association"
+    },
+    {
+      "screen_name": "List",
+      "mapped_files": [
+        "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/list/ListViewModel.kt"
+      ],
+      "confidence": 0.8,
+      "method": "viewmodel_association"
+    },
+    {
+      "screen_name": "DetailScreen",
+      "mapped_files": [
+        "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/detail/DetailScreen.kt"
+      ],
+      "confidence": 0.9,
+      "method": "composable_declaration"
+    },
+    {
+      "screen_name": "ListScreen",
+      "mapped_files": [
+        "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/list/ListScreen.kt"
+      ],
+      "confidence": 0.9,
+      "method": "composable_declaration"
+    }
+  ],
+  "trace": [
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/App.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [
+        "App",
+        "MuseumApp"
+      ],
+      "metrics": {
+        "rloc": 44,
+        "functions": 1,
+        "mcc": 3,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/data/MuseumObject.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 17,
+        "functions": 0,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/data/MuseumRepository.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 21,
+        "functions": 3,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/data/MuseumStorage.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 21,
+        "functions": 4,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/di/Koin.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [],
+      "metrics": {
+        "rloc": 45,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/detail/DetailViewModel.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [
+        "Detail"
+      ],
+      "metrics": {
+        "rloc": 9,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/list/ListViewModel.kt",
+      "relation": "direct",
+      "distance": 0,
+      "screens": [
+        "List"
+      ],
+      "metrics": {
+        "rloc": 13,
+        "functions": 0,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/detail/DetailScreen.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [
+        "DetailScreen"
+      ],
+      "metrics": {
+        "rloc": 133,
+        "functions": 1,
+        "mcc": 3,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/list/ListScreen.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [
+        "ListScreen"
+      ],
+      "metrics": {
+        "rloc": 92,
+        "functions": 1,
+        "mcc": 3,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/androidApp/src/main/kotlin/com/jetbrains/kmpapp/MuseumApp.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "screens": [
+        "MuseumApp"
+      ],
+      "metrics": {
+        "rloc": 9,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      }
+    }
+  ],
+  "impacted_screens": [
+    "App",
+    "Detail",
+    "DetailScreen",
+    "List",
+    "ListScreen",
+    "MuseumApp"
+  ],
+  "total_impacted_files": 10,
+  "total_impacted_screens": 6,
+  "stack_compatibility": {
+    "warnings": [],
+    "detected": {
+      "kotlin": "1.9.24",
+      "agp": "8.5.0",
+      "compose": "1.6.0"
+    }
+  }
+}

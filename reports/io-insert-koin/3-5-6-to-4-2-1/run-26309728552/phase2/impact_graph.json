@@ -1,0 +1,216 @@
+{
+  "dependency_group": "io.insert-koin",
+  "version_before": "3.5.6",
+  "version_after": "4.2.1",
+  "seed_files": [
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/di/Koin.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/detail/DetailScreen.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/list/ListScreen.kt"
+  ],
+  "impacted_files": [
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/di/Koin.kt",
+      "relation": "direct",
+      "distance": 0,
+      "imports_from_dependency": [
+        "com.jetbrains.kmpapp.data.InMemoryMuseumStorage",
+        "com.jetbrains.kmpapp.data.KtorMuseumApi",
+        "com.jetbrains.kmpapp.data.MuseumApi",
+        "com.jetbrains.kmpapp.data.MuseumRepository",
+        "com.jetbrains.kmpapp.data.MuseumStorage",
+        "com.jetbrains.kmpapp.screens.detail.DetailViewModel",
+        "com.jetbrains.kmpapp.screens.list.ListViewModel",
+        "io.ktor.client.HttpClient",
+        "io.ktor.client.plugins.contentnegotiation.ContentNegotiation",
+        "io.ktor.http.ContentType",
+        "io.ktor.serialization.kotlinx.json.json",
+        "kotlinx.serialization.json.Json",
+        "org.koin.core.context.startKoin",
+        "org.koin.core.module.dsl.factoryOf",
+        "org.koin.dsl.module"
+      ],
+      "metrics": {
+        "rloc": 45,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      },
+      "declarations": [
+        "com.jetbrains.kmpapp.di.initKoin"
+      ],
+      "source_set": "commonMain"
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/detail/DetailScreen.kt",
+      "relation": "direct",
+      "distance": 0,
+      "imports_from_dependency": [
+        "androidx.compose.animation.AnimatedContent",
+        "androidx.compose.foundation.background",
+        "androidx.compose.foundation.layout.Column",
+        "androidx.compose.foundation.layout.Spacer",
+        "androidx.compose.foundation.layout.WindowInsets",
+        "androidx.compose.foundation.layout.fillMaxSize",
+        "androidx.compose.foundation.layout.fillMaxWidth",
+        "androidx.compose.foundation.layout.height",
+        "androidx.compose.foundation.layout.padding",
+        "androidx.compose.foundation.layout.systemBars",
+        "androidx.compose.foundation.layout.windowInsetsPadding",
+        "androidx.compose.foundation.rememberScrollState",
+        "androidx.compose.foundation.text.selection.SelectionContainer",
+        "androidx.compose.foundation.verticalScroll",
+        "androidx.compose.material.icons.Icons",
+        "androidx.compose.material.icons.automirrored.filled.ArrowBack",
+        "androidx.compose.material3.ExperimentalMaterial3Api",
+        "androidx.compose.material3.Icon",
+        "androidx.compose.material3.IconButton",
+        "androidx.compose.material3.MaterialTheme",
+        "androidx.compose.material3.Scaffold",
+        "androidx.compose.material3.Text",
+        "androidx.compose.material3.TopAppBar",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.runtime.getValue",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.graphics.Color",
+        "androidx.compose.ui.layout.ContentScale",
+        "androidx.compose.ui.text.SpanStyle",
+        "androidx.compose.ui.text.buildAnnotatedString",
+        "androidx.compose.ui.text.font.FontWeight",
+        "androidx.compose.ui.text.withStyle",
+        "androidx.compose.ui.unit.dp",
+        "androidx.lifecycle.compose.collectAsStateWithLifecycle",
+        "coil3.compose.AsyncImage",
+        "com.jetbrains.kmpapp.data.MuseumObject",
+        "com.jetbrains.kmpapp.screens.EmptyScreenContent",
+        "kmp_app_template.shared.generated.resources.Res",
+        "kmp_app_template.shared.generated.resources.back",
+        "kmp_app_template.shared.generated.resources.label_artist",
+        "kmp_app_template.shared.generated.resources.label_credits",
+        "kmp_app_template.shared.generated.resources.label_date",
+        "kmp_app_template.shared.generated.resources.label_department",
+        "kmp_app_template.shared.generated.resources.label_dimensions",
+        "kmp_app_template.shared.generated.resources.label_medium",
+        "kmp_app_template.shared.generated.resources.label_repository",
+        "kmp_app_template.shared.generated.resources.label_title",
+        "org.jetbrains.compose.resources.stringResource",
+        "org.koin.compose.viewmodel.koinViewModel"
+      ],
+      "metrics": {
+        "rloc": 133,
+        "functions": 1,
+        "mcc": 3,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      },
+      "declarations": [
+        "com.jetbrains.kmpapp.screens.detail.DetailScreen",
+        "com.jetbrains.kmpapp.screens.detail.ObjectDetails",
+        "com.jetbrains.kmpapp.screens.detail.LabeledInfo"
+      ],
+      "source_set": "commonMain"
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/list/ListScreen.kt",
+      "relation": "direct",
+      "distance": 0,
+      "imports_from_dependency": [
+        "androidx.compose.animation.AnimatedContent",
+        "androidx.compose.foundation.background",
+        "androidx.compose.foundation.clickable",
+        "androidx.compose.foundation.layout.Column",
+        "androidx.compose.foundation.layout.Spacer",
+        "androidx.compose.foundation.layout.WindowInsets",
+        "androidx.compose.foundation.layout.asPaddingValues",
+        "androidx.compose.foundation.layout.aspectRatio",
+        "androidx.compose.foundation.layout.fillMaxSize",
+        "androidx.compose.foundation.layout.fillMaxWidth",
+        "androidx.compose.foundation.layout.height",
+        "androidx.compose.foundation.layout.padding",
+        "androidx.compose.foundation.layout.safeDrawing",
+        "androidx.compose.foundation.lazy.grid.GridCells",
+        "androidx.compose.foundation.lazy.grid.LazyVerticalGrid",
+        "androidx.compose.foundation.lazy.grid.items",
+        "androidx.compose.material3.MaterialTheme",
+        "androidx.compose.material3.Text",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.runtime.getValue",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.graphics.Color",
+        "androidx.compose.ui.layout.ContentScale",
+        "androidx.compose.ui.unit.dp",
+        "androidx.lifecycle.compose.collectAsStateWithLifecycle",
+        "coil3.compose.AsyncImage",
+        "com.jetbrains.kmpapp.data.MuseumObject",
+        "com.jetbrains.kmpapp.screens.EmptyScreenContent",
+        "org.koin.compose.viewmodel.koinViewModel"
+      ],
+      "metrics": {
+        "rloc": 92,
+        "functions": 1,
+        "mcc": 3,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      },
+      "declarations": [
+        "com.jetbrains.kmpapp.screens.list.ListScreen",
+        "com.jetbrains.kmpapp.screens.list.ObjectGrid",
+        "com.jetbrains.kmpapp.screens.list.ObjectFrame"
+      ],
+      "source_set": "commonMain"
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/androidApp/src/main/kotlin/com/jetbrains/kmpapp/MuseumApp.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "imports_from_dependency": [],
+      "metrics": {
+        "rloc": 9,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      },
+      "declarations": [
+        "com.jetbrains.kmpapp.MuseumApp"
+      ],
+      "source_set": "main"
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/App.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "imports_from_dependency": [],
+      "metrics": {
+        "rloc": 44,
+        "functions": 1,
+        "mcc": 3,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      },
+      "declarations": [
+        "com.jetbrains.kmpapp.ListDestination",
+        "com.jetbrains.kmpapp.DetailDestination",
+        "com.jetbrains.kmpapp.App"
+      ],
+      "source_set": "commonMain"
+    }
+  ],
+  "expect_actual_pairs": [
+    {
+      "expect_fqcn": "com.example.common.DatabaseDriverFactory",
+      "expect_file": "/tmp/output/phase1/before/tools/kmp-impact-analyzer/tests/fixtures/sample_kotlin/ExpectClass.kt",
+      "actual_files": [
+        "/tmp/output/phase1/before/tools/kmp-impact-analyzer/tests/fixtures/sample_kotlin/ActualAndroid.kt"
+      ]
+    }
+  ],
+  "total_project_files": 19,
+  "total_impacted": 5,
+  "ksp_edges_added": 0
+}

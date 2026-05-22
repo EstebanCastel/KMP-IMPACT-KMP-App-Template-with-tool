@@ -1,0 +1,253 @@
+{
+  "dependency_group": "io.ktor",
+  "version_before": "2.3.7",
+  "version_after": "3.5.0",
+  "seed_files": [
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/data/MuseumApi.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/di/Koin.kt",
+    "/tmp/output/phase1/before/tools/kmp-impact-analyzer/tests/fixtures/sample_kotlin/CommonModule.kt"
+  ],
+  "impacted_files": [
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/data/MuseumApi.kt",
+      "relation": "direct",
+      "distance": 0,
+      "imports_from_dependency": [
+        "io.ktor.client.HttpClient",
+        "io.ktor.client.call.body",
+        "io.ktor.client.request.get",
+        "io.ktor.utils.io.CancellationException"
+      ],
+      "metrics": {
+        "rloc": 23,
+        "functions": 0,
+        "mcc": 3,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      },
+      "declarations": [
+        "com.jetbrains.kmpapp.data.MuseumApi",
+        "com.jetbrains.kmpapp.data.KtorMuseumApi"
+      ],
+      "source_set": "commonMain"
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/di/Koin.kt",
+      "relation": "direct",
+      "distance": 0,
+      "imports_from_dependency": [
+        "com.jetbrains.kmpapp.data.InMemoryMuseumStorage",
+        "com.jetbrains.kmpapp.data.KtorMuseumApi",
+        "com.jetbrains.kmpapp.data.MuseumApi",
+        "com.jetbrains.kmpapp.data.MuseumRepository",
+        "com.jetbrains.kmpapp.data.MuseumStorage",
+        "com.jetbrains.kmpapp.screens.detail.DetailViewModel",
+        "com.jetbrains.kmpapp.screens.list.ListViewModel",
+        "io.ktor.client.HttpClient",
+        "io.ktor.client.plugins.contentnegotiation.ContentNegotiation",
+        "io.ktor.http.ContentType",
+        "io.ktor.serialization.kotlinx.json.json",
+        "kotlinx.serialization.json.Json",
+        "org.koin.core.context.startKoin",
+        "org.koin.core.module.dsl.factoryOf",
+        "org.koin.dsl.module"
+      ],
+      "metrics": {
+        "rloc": 45,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      },
+      "declarations": [
+        "com.jetbrains.kmpapp.di.initKoin"
+      ],
+      "source_set": "commonMain"
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/tools/kmp-impact-analyzer/tests/fixtures/sample_kotlin/CommonModule.kt",
+      "relation": "direct",
+      "distance": 0,
+      "imports_from_dependency": [
+        "io.ktor.client.HttpClient",
+        "io.ktor.client.request.get"
+      ],
+      "metrics": {
+        "rloc": 8,
+        "functions": 0,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      },
+      "declarations": [
+        "com.example.common.ExpenseRepoImpl"
+      ],
+      "source_set": "common"
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/list/ListViewModel.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "imports_from_dependency": [],
+      "metrics": {
+        "rloc": 13,
+        "functions": 0,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      },
+      "declarations": [
+        "com.jetbrains.kmpapp.screens.list.ListViewModel"
+      ],
+      "source_set": "commonMain"
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/list/ListScreen.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "imports_from_dependency": [],
+      "metrics": {
+        "rloc": 92,
+        "functions": 1,
+        "mcc": 3,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      },
+      "declarations": [
+        "com.jetbrains.kmpapp.screens.list.ListScreen",
+        "com.jetbrains.kmpapp.screens.list.ObjectGrid",
+        "com.jetbrains.kmpapp.screens.list.ObjectFrame"
+      ],
+      "source_set": "commonMain"
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/detail/DetailViewModel.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "imports_from_dependency": [],
+      "metrics": {
+        "rloc": 9,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      },
+      "declarations": [
+        "com.jetbrains.kmpapp.screens.detail.DetailViewModel"
+      ],
+      "source_set": "commonMain"
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/detail/DetailScreen.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "imports_from_dependency": [],
+      "metrics": {
+        "rloc": 133,
+        "functions": 1,
+        "mcc": 3,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      },
+      "declarations": [
+        "com.jetbrains.kmpapp.screens.detail.DetailScreen",
+        "com.jetbrains.kmpapp.screens.detail.ObjectDetails",
+        "com.jetbrains.kmpapp.screens.detail.LabeledInfo"
+      ],
+      "source_set": "commonMain"
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/androidApp/src/main/kotlin/com/jetbrains/kmpapp/MuseumApp.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "imports_from_dependency": [],
+      "metrics": {
+        "rloc": 9,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      },
+      "declarations": [
+        "com.jetbrains.kmpapp.MuseumApp"
+      ],
+      "source_set": "main"
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/tools/kmp-impact-analyzer/tests/fixtures/sample_kotlin/ViewModel.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "imports_from_dependency": [],
+      "metrics": {
+        "rloc": 6,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      },
+      "declarations": [
+        "com.example.ui.ExpensesViewModel"
+      ],
+      "source_set": "common"
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/tools/kmp-impact-analyzer/tests/fixtures/sample_kotlin/AppModule.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "imports_from_dependency": [],
+      "metrics": {
+        "rloc": 7,
+        "functions": 1,
+        "mcc": 1,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      },
+      "declarations": [
+        "com.example.di.appModule"
+      ],
+      "source_set": "common"
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/App.kt",
+      "relation": "transitive",
+      "distance": 2,
+      "imports_from_dependency": [],
+      "metrics": {
+        "rloc": 44,
+        "functions": 1,
+        "mcc": 3,
+        "detekt_findings": 0,
+        "test_coverage": -1.0,
+        "metrics_source": "heuristic"
+      },
+      "declarations": [
+        "com.jetbrains.kmpapp.ListDestination",
+        "com.jetbrains.kmpapp.DetailDestination",
+        "com.jetbrains.kmpapp.App"
+      ],
+      "source_set": "commonMain"
+    }
+  ],
+  "expect_actual_pairs": [
+    {
+      "expect_fqcn": "com.example.common.DatabaseDriverFactory",
+      "expect_file": "/tmp/output/phase1/before/tools/kmp-impact-analyzer/tests/fixtures/sample_kotlin/ExpectClass.kt",
+      "actual_files": [
+        "/tmp/output/phase1/before/tools/kmp-impact-analyzer/tests/fixtures/sample_kotlin/ActualAndroid.kt"
+      ]
+    }
+  ],
+  "total_project_files": 19,
+  "total_impacted": 11,
+  "ksp_edges_added": 0
+}

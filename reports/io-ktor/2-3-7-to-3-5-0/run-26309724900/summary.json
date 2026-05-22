@@ -1,0 +1,193 @@
+{
+  "dependency_group": "io.ktor",
+  "version_before": "2.3.7",
+  "version_after": "3.5.0",
+  "risk_level": "high",
+  "recommendation": "Hold merge until impacted files are reviewed and targeted regression checks pass.",
+  "report_url": "",
+  "total_impacted_files": 11,
+  "total_impacted_screens": 7,
+  "direct_impacts": 3,
+  "transitive_impacts": 8,
+  "expect_actual_impacts": 0,
+  "expect_actual_pairs_total": 1,
+  "total_project_files": 19,
+  "dynamic_status": "skipped",
+  "dynamic_summary": "skipped",
+  "dynamic_diffs": 0,
+  "before_screens": 0,
+  "after_screens": 0,
+  "dynamic_nodes_before": 0,
+  "dynamic_nodes_after": 0,
+  "dynamic_structures_before": 0,
+  "dynamic_structures_after": 0,
+  "screen_mappings": 7,
+  "trace_entries": 11,
+  "seed_files": [
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/data/MuseumApi.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/di/Koin.kt",
+    "/tmp/output/phase1/before/tools/kmp-impact-analyzer/tests/fixtures/sample_kotlin/CommonModule.kt"
+  ],
+  "impacted_screens": [
+    "App",
+    "Detail",
+    "DetailScreen",
+    "Expenses",
+    "List",
+    "ListScreen",
+    "MuseumApp"
+  ],
+  "top_impacted_files": [
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/data/MuseumApi.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "commonMain",
+      "rloc": 23,
+      "mcc": 3,
+      "declarations": [
+        "com.jetbrains.kmpapp.data.MuseumApi",
+        "com.jetbrains.kmpapp.data.KtorMuseumApi"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/di/Koin.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "commonMain",
+      "rloc": 45,
+      "mcc": 1,
+      "declarations": [
+        "com.jetbrains.kmpapp.di.initKoin"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/tools/kmp-impact-analyzer/tests/fixtures/sample_kotlin/CommonModule.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "common",
+      "rloc": 8,
+      "mcc": 1,
+      "declarations": [
+        "com.example.common.ExpenseRepoImpl"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/detail/DetailScreen.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "source_set": "commonMain",
+      "rloc": 133,
+      "mcc": 3,
+      "declarations": [
+        "com.jetbrains.kmpapp.screens.detail.DetailScreen",
+        "com.jetbrains.kmpapp.screens.detail.ObjectDetails",
+        "com.jetbrains.kmpapp.screens.detail.LabeledInfo"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/list/ListScreen.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "source_set": "commonMain",
+      "rloc": 92,
+      "mcc": 3,
+      "declarations": [
+        "com.jetbrains.kmpapp.screens.list.ListScreen",
+        "com.jetbrains.kmpapp.screens.list.ObjectGrid",
+        "com.jetbrains.kmpapp.screens.list.ObjectFrame"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/App.kt",
+      "relation": "transitive",
+      "distance": 2,
+      "source_set": "commonMain",
+      "rloc": 44,
+      "mcc": 3,
+      "declarations": [
+        "com.jetbrains.kmpapp.ListDestination",
+        "com.jetbrains.kmpapp.DetailDestination",
+        "com.jetbrains.kmpapp.App"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/list/ListViewModel.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "source_set": "commonMain",
+      "rloc": 13,
+      "mcc": 1,
+      "declarations": [
+        "com.jetbrains.kmpapp.screens.list.ListViewModel"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/androidApp/src/main/kotlin/com/jetbrains/kmpapp/MuseumApp.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "source_set": "main",
+      "rloc": 9,
+      "mcc": 1,
+      "declarations": [
+        "com.jetbrains.kmpapp.MuseumApp"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/detail/DetailViewModel.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "source_set": "commonMain",
+      "rloc": 9,
+      "mcc": 1,
+      "declarations": [
+        "com.jetbrains.kmpapp.screens.detail.DetailViewModel"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/tools/kmp-impact-analyzer/tests/fixtures/sample_kotlin/AppModule.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "source_set": "common",
+      "rloc": 7,
+      "mcc": 1,
+      "declarations": [
+        "com.example.di.appModule"
+      ]
+    }
+  ],
+  "compat_warnings": [
+    {
+      "severity": "warning",
+      "title": "Ktor 3.5.0 requires Kotlin 2.x",
+      "detail": "Detected Kotlin 1.9.24. Ktor 3.x ships as a Kotlin 2.x library, and its iOS/Native targets often fail to link against Kotlin 1.9. AGP and Compose typically need to move at the same time.",
+      "suggestion": "Either upgrade Kotlin to 2.0+ (and AGP / Compose accordingly), or pin Ktor on the 2.3.x line.",
+      "detected": {
+        "kotlin": "1.9.24",
+        "agp": "8.5.0",
+        "compose": "1.6.0"
+      },
+      "required": {
+        "kotlin": ">= 2.0.0"
+      }
+    }
+  ],
+  "stack_detected": {
+    "kotlin": "1.9.24",
+    "agp": "8.5.0",
+    "compose": "1.6.0"
+  },
+  "version_key": "ktor",
+  "compilation_after": "failure",
+  "compile_errors": 0,
+  "has_detekt": false,
+  "has_kover": false,
+  "tools_used": {
+    "tree_sitter": true,
+    "ksp": false,
+    "detekt": false,
+    "kover": false,
+    "droidbot": false,
+    "codecharta": true
+  }
+}

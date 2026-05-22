@@ -1,0 +1,19 @@
+{
+  "dependency_group": "org.jetbrains.compose.material3",
+  "version_before": "1.6.11",
+  "version_after": "1.9.0",
+  "seed_files": [],
+  "impacted_files": [],
+  "expect_actual_pairs": [
+    {
+      "expect_fqcn": "com.example.common.DatabaseDriverFactory",
+      "expect_file": "/tmp/output/phase1/before/tools/kmp-impact-analyzer/tests/fixtures/sample_kotlin/ExpectClass.kt",
+      "actual_files": [
+        "/tmp/output/phase1/before/tools/kmp-impact-analyzer/tests/fixtures/sample_kotlin/ActualAndroid.kt"
+      ]
+    }
+  ],
+  "total_project_files": 19,
+  "total_impacted": 0,
+  "ksp_edges_added": 0
+}

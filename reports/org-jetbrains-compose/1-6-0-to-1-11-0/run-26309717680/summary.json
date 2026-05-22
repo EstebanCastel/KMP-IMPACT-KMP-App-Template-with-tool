@@ -1,0 +1,130 @@
+{
+  "dependency_group": "org.jetbrains.compose",
+  "version_before": "1.6.0",
+  "version_after": "1.11.0",
+  "risk_level": "medium",
+  "recommendation": "Review the directly impacted files and run focused smoke tests before merging.",
+  "report_url": "",
+  "total_impacted_files": 6,
+  "total_impacted_screens": 5,
+  "direct_impacts": 2,
+  "transitive_impacts": 4,
+  "expect_actual_impacts": 0,
+  "expect_actual_pairs_total": 1,
+  "total_project_files": 19,
+  "dynamic_status": "skipped",
+  "dynamic_summary": "skipped",
+  "dynamic_diffs": 0,
+  "before_screens": 0,
+  "after_screens": 0,
+  "dynamic_nodes_before": 0,
+  "dynamic_nodes_after": 0,
+  "dynamic_structures_before": 0,
+  "dynamic_structures_after": 0,
+  "screen_mappings": 5,
+  "trace_entries": 6,
+  "seed_files": [
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/EmptyScreenContent.kt",
+    "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/detail/DetailScreen.kt"
+  ],
+  "impacted_screens": [
+    "App",
+    "DetailScreen",
+    "EmptyScreenContent",
+    "ListScreen",
+    "MuseumApp"
+  ],
+  "top_impacted_files": [
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/detail/DetailScreen.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "commonMain",
+      "rloc": 133,
+      "mcc": 3,
+      "declarations": [
+        "com.jetbrains.kmpapp.screens.detail.DetailScreen",
+        "com.jetbrains.kmpapp.screens.detail.ObjectDetails",
+        "com.jetbrains.kmpapp.screens.detail.LabeledInfo"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/EmptyScreenContent.kt",
+      "relation": "direct",
+      "distance": 0,
+      "source_set": "commonMain",
+      "rloc": 22,
+      "mcc": 1,
+      "declarations": [
+        "com.jetbrains.kmpapp.screens.EmptyScreenContent"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/screens/list/ListScreen.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "source_set": "commonMain",
+      "rloc": 92,
+      "mcc": 3,
+      "declarations": [
+        "com.jetbrains.kmpapp.screens.list.ListScreen",
+        "com.jetbrains.kmpapp.screens.list.ObjectGrid",
+        "com.jetbrains.kmpapp.screens.list.ObjectFrame"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/App.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "source_set": "commonMain",
+      "rloc": 44,
+      "mcc": 3,
+      "declarations": [
+        "com.jetbrains.kmpapp.ListDestination",
+        "com.jetbrains.kmpapp.DetailDestination",
+        "com.jetbrains.kmpapp.App"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/shared/src/commonMain/kotlin/com/jetbrains/kmpapp/di/Koin.kt",
+      "relation": "transitive",
+      "distance": 1,
+      "source_set": "commonMain",
+      "rloc": 45,
+      "mcc": 1,
+      "declarations": [
+        "com.jetbrains.kmpapp.di.initKoin"
+      ]
+    },
+    {
+      "file_path": "/tmp/output/phase1/before/androidApp/src/main/kotlin/com/jetbrains/kmpapp/MuseumApp.kt",
+      "relation": "transitive",
+      "distance": 2,
+      "source_set": "main",
+      "rloc": 9,
+      "mcc": 1,
+      "declarations": [
+        "com.jetbrains.kmpapp.MuseumApp"
+      ]
+    }
+  ],
+  "compat_warnings": [],
+  "stack_detected": {
+    "kotlin": "1.9.24",
+    "agp": "8.5.0",
+    "compose": "1.6.0"
+  },
+  "version_key": "composeMultiplatform",
+  "compilation_after": "failure",
+  "compile_errors": 0,
+  "has_detekt": false,
+  "has_kover": false,
+  "tools_used": {
+    "tree_sitter": true,
+    "ksp": false,
+    "detekt": false,
+    "kover": false,
+    "droidbot": false,
+    "codecharta": true
+  }
+}

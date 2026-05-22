@@ -1,0 +1,21 @@
+{
+  "before_dir": "/tmp/output/phase1/before",
+  "after_dir": "/tmp/output/phase1/after",
+  "version_change": {
+    "dependency_group": "io.ktor",
+    "version_key": "ktor",
+    "before": "2.3.7",
+    "after": "3.5.0"
+  },
+  "init_script_injected": false,
+  "detekt_reports": {},
+  "kover_reports": {},
+  "compilation_after": {
+    "status": "failure",
+    "errors": [],
+    "tasks": [
+      ":shared:compileKotlinMetadata"
+    ]
+  },
+  "compile_targets": {}
+}
